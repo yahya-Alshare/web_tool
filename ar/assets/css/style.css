@@ -453,7 +453,7 @@ body,input,.form-field,select,.about-us.ar .about-us-title,.about-us.ar .about-u
 .text{line-height:1.8}
 .text-en{font-family:Verdana,Arial;line-height:1.6;direction:ltr}
 .notification-msg{padding:5px 10px;background-color:#49cbd2}
-.header{height:60px;top:0;left:0;margin:auto;background-color:#267C8D;z-index:4000!important}
+.header{height:60px;top:0;left:0;margin:auto;background-color:#267C8D;z-index:4000!important;display: flex;}
 .header.sticky,.header.inside{background-color:#1D8387}
 .header h1 {
     color: #FFF;

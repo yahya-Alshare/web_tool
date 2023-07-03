@@ -403,6 +403,10 @@ button:hover,input[type=reset]:hover,input[type=submit]:hover{background:hsl(190
     90%{width:90%}
     100%{width:98%}
     }
+    #header{
+      display: flex !important;
+    }
+   
     .floating_ad{top:25%;
     z-index:99;
     margin:auto;
@@ -684,6 +688,10 @@ opacity: .65;
 
 
   @media (max-width:767px) {
+    #header{
+      display: block !important;
+      text-align: center !important;
+    }
     .section-slide-content {
       padding: 20px;
     }
@@ -755,9 +763,3 @@ header{
     display: none;
   }
 
-  #header{
-    display: flex !important;
-  }
-  .box{
-    padding-top: 100px !important;
-  }

@@ -756,8 +756,8 @@ header{
   }
 
   #header{
-    display: flex;
+    display: flex !important;
   }
   .box{
-    padding-top: 100px;
+    padding-top: 100px !important;
   }

@@ -754,3 +754,10 @@ header{
   #floating_ads{
     display: none;
   }
+
+  #header{
+    display: flex;
+  }
+  .box{
+    padding-top: 100px;
+  }

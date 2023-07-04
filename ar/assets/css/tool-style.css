@@ -763,6 +763,6 @@ header{
     display: none;
   }
 
-header .wrapper{
-  display: none !important;
-}
+  header .wrapper,.mw-header{
+    display: none !important;
+  }

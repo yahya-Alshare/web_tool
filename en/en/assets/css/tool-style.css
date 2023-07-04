@@ -750,3 +750,6 @@ header{
   .tradingview-widget-container{
     margin: 0 auto ;
   }
+  header .wrapper{
+    display: none !important;
+  }

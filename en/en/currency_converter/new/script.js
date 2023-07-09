@@ -28,7 +28,7 @@ for (var i = 0; i < firstTds.length; i++) {
   var pElement = document.createElement("p");
   var btntElement = document.createElement("button");
   inputElement.type = "number";
-  btntElement.innerHTML = "تحويل"
+  btntElement.innerHTML = "transformation"
   
   td.querySelector("a").removeAttribute("href")
   btntElement.setAttribute("onclick", "convertCurrency(this)")
@@ -46,8 +46,8 @@ function convertCurrency(button) {
   var tds = td.parentNode.getElementsByTagName('td');
   var secondTdContent = tds[1].innerHTML;
 
-  console.log("قيمة العنصر داخل الـ input: ", inputValue);
-  console.log("المحتوى النصي للـ td الثاني: ", secondTdContent);
+  console.log("The value of the element inside the input: ", inputValue);
+  console.log("The text of the second td: ", secondTdContent);
 
   fetch("https://api.currencyfreaks.com/v2.0/rates/latest?apikey=f66fa5cdf3da4b6fb455a23b0b2e2626")
     .then((result) => result.json())
@@ -61,7 +61,7 @@ function convertCurrency(button) {
         var corunvalue =  convertedValue  * coinValueto
         var pElement = td.querySelector("p")
 
-        pElement.innerHTML = "القيمة المحولة: " + corunvalue.toFixed(2);
+        pElement.innerHTML = "Converted value: " + corunvalue.toFixed(2);
 
        
 

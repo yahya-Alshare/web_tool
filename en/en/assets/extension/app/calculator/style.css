@@ -118,3 +118,6 @@ button:nth-child(20){
 button:nth-child(20):hover{
 	background-color: #9477af;
 }
+.menu-content{
+	width: 30%;
+}

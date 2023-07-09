@@ -188,31 +188,161 @@ function isVisible (ele) {
 <p>تحويل كافة العملات العربية والعالمية حسب سعر الصرف في الأسواق اليوم</p></div>
 <script data-cfasync='false'>document.querySelector('#mobileAppImage img').style.height= (parseInt(parseInt(document.querySelector('#mobileAppImage').offsetWidth) * 0.5625)) + 'px'; document.querySelector('#mobileAppImage img').style.width='100%';</script><div class='box'>
   <h2 class='text-center'>Select the currency you want to convert</h2>
-<table class='table_a'>
-<tr>
-<th width='70%'>تحويل من</th> <th>رمز العملة</th>
-</tr>
-<tr><td><a href='ILS.html'><img alt='فلسطين ps' style='width:30px; height:20px; margin-bottom:-5px' src='../extension/geoip/flag/ps.png'> شيكل اسرائيلي</a></td><td class='text-center'>ILS</td></tr> <tr><td><a href='USD.html'><img alt='أمريكا us' style='width:30px; height:20px; margin-bottom:-5px' src='../extension/geoip/flag/us.png'> دولار أمريكي</a></td><td class='text-center'>USD</td></tr> <tr><td><a href='EUR.html'><img alt='الإتحاد الاوروبي eu' style='width:30px; height:20px; margin-bottom:-5px' src='../extension/geoip/flag/eu.png'> يورو</a></td><td class='text-center'>EUR</td></tr> <tr><td><a href='TRY.html'><img alt='تركيا tr' style='width:30px; height:20px; margin-bottom:-5px' src='../extension/geoip/flag/tr.png'> ليرة تركية</a></td><td class='text-center'>TRY</td></tr> <tr><td><a href='SAR.html'><img alt='السعودية sa' style='width:30px; height:20px; margin-bottom:-5px' src='../extension/geoip/flag/sa.png'> ريال سعودي</a></td><td class='text-center'>SAR</td></tr> <tr><td><a href='AED.html'><img alt='الإمارات ae' style='width:30px; height:20px; margin-bottom:-5px' src='../extension/geoip/flag/ae.png'> درهم اماراتي</a></td><td class='text-center'>AED</td></tr> <tr><td><a href='OMR.html'><img alt='عمان om' style='width:30px; height:20px; margin-bottom:-5px' src='../extension/geoip/flag/om.png'> ريال عماني</a></td><td class='text-center'>OMR</td></tr> <tr><td><a href='JOD.html'><img alt='الأردن jo' style='width:30px; height:20px; margin-bottom:-5px' src='../extension/geoip/flag/jo.png'> دينار أردني</a></td><td class='text-center'>JOD</td></tr> <tr><td><a href='EGP.html'><img alt='مصر eg' style='width:30px; height:20px; margin-bottom:-5px' src='../extension/geoip/flag/eg.png'> جنيه مصري</a></td><td class='text-center'>EGP</td></tr> <tr><td><a href='IQD.html'><img alt='العراق iq' style='width:30px; height:20px; margin-bottom:-5px' src='../extension/geoip/flag/iq.png'> دينار عراقي</a></td><td class='text-center'>IQD</td></tr> <tr><td><a href='DZD.html'><img alt='الجزائر dz' style='width:30px; height:20px; margin-bottom:-5px' src='../extension/geoip/flag/dz.png'> دينار جزائري</a></td><td class='text-center'>DZD</td></tr> <tr><td><a href='BHD.html'><img alt='البحرين bh' style='width:30px; height:20px; margin-bottom:-5px' src='../extension/geoip/flag/bh.png'> دينار بحريني</a></td><td class='text-center'>BHD</td></tr> <tr><td><a href='KWD.html'><img alt='الكويت kw' style='width:30px; height:20px; margin-bottom:-5px' src='../extension/geoip/flag/kw.png'> دينار كويتي</a></td><td class='text-center'>KWD</td></tr> <tr><td><a href='LBP.html'><img alt='لبنان lb' style='width:30px; height:20px; margin-bottom:-5px' src='../extension/geoip/flag/lb.png'> ليرة لبنانية</a></td><td class='text-center'>LBP</td></tr> <tr><td><a href='QAR.html'><img alt='قطر qa' style='width:30px; height:20px; margin-bottom:-5px' src='../extension/geoip/flag/qa.png'> ريال قطري</a></td><td class='text-center'>QAR</td></tr> <tr><td><a href='SYP.html'><img alt='سوريا sy' style='width:30px; height:20px; margin-bottom:-5px' src='../extension/geoip/flag/sy.png'> ليرة سورية</a></td><td class='text-center'>SYP</td></tr> <tr><td><a href='SDG.html'><img alt='السودان sd' style='width:30px; height:20px; margin-bottom:-5px' src='../extension/geoip/flag/sd.png'> جنيه سوداني</a></td><td class='text-center'>SDG</td></tr> <tr><td><a href='TND.html'><img alt='تونس tn' style='width:30px; height:20px; margin-bottom:-5px' src='../extension/geoip/flag/tn.png'> دينار تونسي</a></td><td class='text-center'>TND</td></tr> <tr><td><a href='YER.html'><img alt='اليمن ye' style='width:30px; height:20px; margin-bottom:-5px' src='../extension/geoip/flag/ye.png'> ريال يمني</a></td><td class='text-center'>YER</td></tr></table>
-</div></main><aside><div id='pcAppImage' class='box box-app-image text-center sc-hide mc-show lc-show'>
+  <table class='table_a'>
+    <tr>
+    <th width='70%'>Convert from</th> <th>Currency symbol</th>
+    </tr>
+    <tr>
+       <td><a href='ILS.html'>
+       <img alt='Palestine ps' style='width:30px; height: 20px; margin-bottom:-5px' src='../extension/geoip/flag/ps.png'>Israeli Shekel</a></td>
+       <td class='text-center'>ILS</td>
+    </tr> <tr>
+         <td>
+         <a href='USD.html'>
+         <img alt='America us' style='width:30px; height: 20px; margin-bottom:-5px' src='../extension/geoip/flag/us.png'>US dollars</a>
+       </td>
+         <td class='text-center'>USD</td>
+       </tr> <tr>
+         <td>
+         <a href='EUR.html'>
+         <img alt='eu' style='width:30px; height: 20px; margin-bottom:-5px' src='../extension/geoip/flag/eu.png'>€</a>
+       </td>
+         <td class='text-center'>EUR</td>
+       </tr> <tr>
+         <td>
+         <a href='TRY.html'>
+         <img alt='Turkey tr' style='width:30px; height: 20px; margin-bottom:-5px' src='../extension/geoip/flag/tr.png'>TL</a>
+       </td>
+         <td class='text-center'>TRY</td>
+       </tr> <tr>
+         <td>
+         <a href='SAR.html'>
+         <img alt='Saudi Arabia sa' style='width:30px; height: 20px; margin-bottom:-5px' src='../extension/geoip/flag/sa.png'> sar</a>
+       </td>
+         <td class='text-center'>SAR</td>
+       </tr> <tr>
+         <td>
+         <a href='AED.html'>
+         <img alt='UAE ae' style='width:30px; height: 20px; margin-bottom:-5px' src='../extension/geoip/flag/ae.png'>AED</a>
+       </td>
+         <td class='text-center'>AED</td>
+       </tr> <tr>
+         <td>
+         <a href='OMR.html'>
+         <img alt='Oman' style='width:30px; height: 20px; margin-bottom:-5px' src='../extension/geoip/flag/om.png'>OMR</a>
+       </td>
+         <td class='text-center'>OMR</td>
+       </tr> <tr>
+         <td>
+         <a href='JOD.html'>
+         <img alt='Jordan jo' style='width:30px; height: 20px; margin-bottom:-5px' src='../extension/geoip/flag/jo.png'>JD</a>
+       </td>
+         <td class='text-center'>JOD</td>
+       </tr> <tr>
+         <td>
+         <a href='EGP.html'>
+         <img alt='Egypt eg' style='width:30px; height: 20px; margin-bottom:-5px' src='../extension/geoip/flag/eg.png'> Egyptian Pounds</a>
+       </td>
+         <td class='text-center'>EGP</td>
+       </tr> <tr>
+         <td>
+         <a href='IQD.html'>
+         <img alt='Iraq iq' style='width:30px; height: 20px; margin-bottom:-5px' src='../extension/geoip/flag/iq.png'> Iraqi Dinar</a>
+       </td>
+         <td class='text-center'>IQD</td>
+       </tr> <tr>
+         <td>
+         <a href='DZD.html'>
+         <img alt='Algeria dz' style='width:30px; height: 20px; margin-bottom:-5px' src='../extension/geoip/flag/dz.png'> Algerian dinars</a>
+       </td>
+         <td class='text-center'>DZD</td>
+       </tr> <tr>
+         <td>
+         <a href='BHD.html'>
+         <img alt='Bahrain bh' style='width:30px; height: 20px; margin-bottom:-5px' src='../extension/geoip/flag/bh.png'>BD</a>
+       </td>
+         <td class='text-center'>BHD</td>
+       </tr> <tr>
+         <td>
+         <a href='KWD.html'>
+         <img alt='Kuwait kw' style='width:30px; height: 20px; margin-bottom:-5px' src='../extension/geoip/flag/kw.png'> kd</a>
+       </td>
+         <td class='text-center'>KWD</td>
+       </tr> <tr>
+         <td>
+         <a href='LBP.html'>
+         <img alt='Lebanon lb' style='width:30px; height: 20px; margin-bottom:-5px' src='../extension/geoip/flag/lb.png'> lb</a>
+       </td>
+         <td class='text-center'>LBP</td>
+       </tr> <tr>
+         <td>
+         <a href='QAR.html'>
+         <img alt='qaia qa' style='width:30px; height: 20px; margin-bottom:-5px' src='../extension/geoip/flag/qa.png'>QR</a>
+       </td>
+         <td class='text-center'>QAR</td>
+       </tr> <tr>
+         <td>
+         <a href='SYP.html'>
+         <img alt='Syria sy' style='width:30px; height: 20px; margin-bottom:-5px' src='../extension/geoip/flag/sy.png'> sp</a>
+       </td>
+         <td class='text-center'>SYP</td>
+       </tr> <tr>
+         <td>
+         <a href='SDG.html'>
+         <img alt='Sudan sd' style='width:30px; height: 20px; margin-bottom:-5px' src='../extension/geoip/flag/sd.png'> Sudanese pound</a>
+       </td>
+         <td class='text-center'>SDG</td>
+       </tr> <tr>
+         <td>
+         <a href='TND.html'>
+         <img alt='Tunisia tn' style='width:30px; height: 20px; margin-bottom:-5px' src='../extension/geoip/flag/tn.png'> Tunisian Dinar</a>
+       </td>
+         <td class='text-center'>TND</td>
+       </tr> <tr>
+         <td>
+         <a href='YER.html'>
+         <img alt='Yemen ye' style='width:30px; height: 20px; margin-bottom:-5px' src='../extension/geoip/flag/ye.png'>YR</a>
+       </td>
+         <td class='text-center'>YER</td>
+       </tr>
+    </table>
+
+</div>
+</main>
+<aside>
+  <div id='pcAppImage' class='box box-app-image text-center sc-hide mc-show lc-show'>
 <picture>
 <source srcset='https://www.un-web.com/tools/theme/appImage/currency_converter.webp' type='image/webp'>
 <source srcset='https://www.un-web.com/tools/theme/appImage/currency_converter.jpg' type='image/jpeg'>
 <img src='../theme/appImage/currency_converter.jpg' alt='تحويل العملات - محول العملات'>
 </picture>
-<p>تحويل كافة العملات العربية والعالمية حسب سعر الصرف في الأسواق اليوم</p></div>
+<p>تحويل كافة العملات العربية والعالمية حسب سعر الصرف في الأسواق اليوم</p>
+</div>
 <script data-cfasync='false'>document.querySelector('#pcAppImage img').style.height= (parseInt(parseInt(document.querySelector('#pcAppImage').offsetWidth) * 0.5625)) + 'px'; document.querySelector('#pcAppImage img').style.width='100%';</script> <div class='box web-search-box'>
-<p><label for='pageSearchBox'>محرك البحث</label></p>
+<p>
+  <label for='pageSearchBox'>محرك البحث</label>
+</p>
 <form action='https://cse.google.com/cse' method='get' autocomplete='off'>
 <button name='cx' value='partner-pub-6172118651852938:9613863504' type='submit'>بحث</button>
 <input type='text' name='q' placeholder='ابحث في مملكة الويب' id='pageSearchBox'>
 </form>
-</div><div class='social-buttons' id='social-buttons'>
+</div>
+<div class='social-buttons' id='social-buttons'>
 <div class='flex-row flex-row-center'>
-<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.un-web.com%2Ftools%2Fcurrency_converter%2F" target='blank'><img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKAQMAAAC3/F3+AAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjwAsAAB4AAdpxxYoAAAAASUVORK5CYII=' alt='facebook' class='socialicon socialicon-facebook' /></a>
-<a href="fb-messenger_/share/index4871.html?link=https%3A%2F%2Fwww.un-web.com%2Ftools%2Fcurrency_converter%2F&amp;app_id=394268510998339" target='blank' class='sc-show mc-show lc-hide'><img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKAQMAAAC3/F3+AAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjwAsAAB4AAdpxxYoAAAAASUVORK5CYII=' alt='whatsapp' class='socialicon socialicon-fb-messenger' /></a>
-<a href="https://www.facebook.com/dialog/send?link=https%3A%2F%2Fwww.un-web.com%2Ftools%2Fcurrency_converter%2F&amp;redirect_uri=https%3A%2F%2Fwww.un-web.com%2Ftools%2Fcurrency_converter%2F&amp;app_id=394268510998339" target='blank' class='sc-hide mc-hide lc-show'><img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKAQMAAAC3/F3+AAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjwAsAAB4AAdpxxYoAAAAASUVORK5CYII=' alt='whatsapp' class='socialicon socialicon-fb-messenger' /></a>
-<a href="https://twitter.com/intent/tweet?text=%d8%aa%d8%ad%d9%88%d9%8a%d9%84%20%d8%a7%d9%84%d8%b9%d9%85%d9%84%d8%a7%d8%aa%20-%20%d9%85%d8%ad%d9%88%d9%84%20%d8%a7%d9%84%d8%b9%d9%85%d9%84%d8%a7%d8%aa&amp;url=https%3A%2F%2Fwww.un-web.com%2Ftools%2Fcurrency_converter%2F" target='blank'><img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKAQMAAAC3/F3+AAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjwAsAAB4AAdpxxYoAAAAASUVORK5CYII=' alt='twitter' class='socialicon socialicon-twitter' /></a>
-<a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fwww.un-web.com%2Ftools%2Fcurrency_converter%2F" target='blank'><img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKAQMAAAC3/F3+AAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjwAsAAB4AAdpxxYoAAAAASUVORK5CYII=' alt='linkedin' class='socialicon socialicon-linkedin' /></a>
+<a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.un-web.com%2Ftools%2Fcurrency_converter%2F" target='blank'>
+  <img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKAQMAAAC3/F3+AAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjwAsAAB4AAdpxxYoAAAAASUVORK5CYII=' alt='facebook' class='socialicon socialicon-facebook' />
+</a>
+<a href="fb-messenger_/share/index4871.html?link=https%3A%2F%2Fwww.un-web.com%2Ftools%2Fcurrency_converter%2F&amp;app_id=394268510998339" target='blank' class='sc-show mc-show lc-hide'>
+  <img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKAQMAAAC3/F3+AAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjwAsAAB4AAdpxxYoAAAAASUVORK5CYII=' alt='whatsapp' class='socialicon socialicon-fb-messenger' />
+</a>
+<a href="https://www.facebook.com/dialog/send?link=https%3A%2F%2Fwww.un-web.com%2Ftools%2Fcurrency_converter%2F&amp;redirect_uri=https%3A%2F%2Fwww.un-web.com%2Ftools%2Fcurrency_converter%2F&amp;app_id=394268510998339" target='blank' class='sc-hide mc-hide lc-show'>
+  <img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKAQMAAAC3/F3+AAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjwAsAAB4AAdpxxYoAAAAASUVORK5CYII=' alt='whatsapp' class='socialicon socialicon-fb-messenger' />
+</a>
+<a href="https://twitter.com/intent/tweet?text=%d8%aa%d8%ad%d9%88%d9%8a%d9%84%20%d8%a7%d9%84%d8%b9%d9%85%d9%84%d8%a7%d8%aa%20-%20%d9%85%d8%ad%d9%88%d9%84%20%d8%a7%d9%84%d8%b9%d9%85%d9%84%d8%a7%d8%aa&amp;url=https%3A%2F%2Fwww.un-web.com%2Ftools%2Fcurrency_converter%2F" target='blank'>
+  <img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKAQMAAAC3/F3+AAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjwAsAAB4AAdpxxYoAAAAASUVORK5CYII=' alt='twitter' class='socialicon socialicon-twitter' />
+</a>
+<a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fwww.un-web.com%2Ftools%2Fcurrency_converter%2F" target='blank'>
+  <img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKAQMAAAC3/F3+AAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjwAsAAB4AAdpxxYoAAAAASUVORK5CYII=' alt='linkedin' class='socialicon socialicon-linkedin' /></a>
 <a href="whatsapp://send?text=https%3A%2F%2Fwww.un-web.com%2Ftools%2Fcurrency_converter%2F" data-action="share/whatsapp/share" target='blank' class='sc-show mc-show lc-hide'><img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKAQMAAAC3/F3+AAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjwAsAAB4AAdpxxYoAAAAASUVORK5CYII=' alt='whatsapp' class='socialicon socialicon-whatsapp' /></a>
 <a href="https://web.whatsapp.com/send?text=https%3A%2F%2Fwww.un-web.com%2Ftools%2Fcurrency_converter%2F" target='blank' class='sc-hide mc-hide lc-show'><img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKAQMAAAC3/F3+AAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjwAsAAB4AAdpxxYoAAAAASUVORK5CYII=' alt='whatsapp' class='socialicon socialicon-whatsapp' /></a>
 <a href="https://t.me/share/url?url=https%3A%2F%2Fwww.un-web.com%2Ftools%2Fcurrency_converter%2F" target='blank' class='sc-show mc-show lc-hide'><img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKAQMAAAC3/F3+AAAAA1BMVEUAAACnej3aAAAAAXRSTlMAQObYZgAAAApJREFUCNdjwAsAAB4AAdpxxYoAAAAASUVORK5CYII=' alt='whatsapp' class='socialicon socialicon-telegram' /></a>

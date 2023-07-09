@@ -103,7 +103,13 @@ function isVisible (ele) {
 
 </header>
 
-<div class='site-wrapper'>
+<div class='site-wrapper'  style=" width: 90%; margin: 0 auto; direction: rtl; padding: 100px 20px; @media (max-width:767px){
+  .site-wrapper{
+    display: block !important;
+  }
+}
+  
+">
 <div class='header-menu-content-wrapper'>
 <div class='header-menu-content site-wrapper'>
 <p class="text-center">جاري التحميل ...</p>
@@ -174,12 +180,10 @@ function isVisible (ele) {
                 document.getElementById("menuSearchButtonExternal").style.display='none';
         }
     </script>
-<div class='flex-row'><main><div id='mobileAppImage' class='box box-app-image text-center sc-show mc-hide lc-hide'>
-<picture>
-<source srcset='https://www.un-web.com/tools/theme/appImage/arabic_to_english_number.webp' type='image/webp'>
-<source srcset='https://www.un-web.com/tools/theme/appImage/arabic_to_english_number.jpg' type='image/jpeg'>
-<img src='../theme/appImage/arabic_to_english_number.jpg' alt='تحويل الأرقام العربية إلى أرقام انجليزية'>
-</picture>
+<div class='flex-row'>
+  <main style="width: 100%;">
+    <div id='mobileAppImage' class='box box-app-image text-center sc-show mc-hide lc-hide'>
+
 <p>يمكنك تحويل الأرقام العربية مثل ٧٨ الى ارقام انجليزية مثل 78 بسهولة وسرعة</p></div>
 <script data-cfasync='false'>document.querySelector('#mobileAppImage img').style.height= (parseInt(parseInt(document.querySelector('#mobileAppImage').offsetWidth) * 0.5625)) + 'px'; document.querySelector('#mobileAppImage img').style.width='100%';</script><script data-cfasync="false" async src="../../../pagead2.googlesyndication.com/pagead/js/f8a50.txt?client=ca-pub-6172118651852938" crossorigin="anonymous"></script>
 <div class='box box-ad'>
@@ -242,7 +246,7 @@ function isVisible (ele) {
 the opposite:
 <a href='../english_to_arabic_number/index.html'>Convert numbers from English to Arabic</a>
 </div>
-<div class="box">
+<div class="box" style="width: 80%;margin: 0 auto;text-align: left;">
 <h2>Converting numbers from Arabic to English</h2>
 <p>Through this service, you can carry out the process of converting numbers from Arabic to English quite easily. For example, by entering the numbers 775, you will get the result of converting the numbers into English and it becomes 775. The process of changing the numbers from Arabic to English is done very quickly, and you can press the button to copy the number and use it In the place you want, and thus you will be able to know how to convert numbers from Arabic to English via the Internet</p>
 <h2>Convert numbers to Arabic</h2>
@@ -316,12 +320,8 @@ the opposite:
 </tr>
 </table>
 </div>  
-</main><aside><div id='pcAppImage' class='box box-app-image text-center sc-hide mc-show lc-show'>
-<picture>
-<source srcset='https://www.un-web.com/tools/theme/appImage/arabic_to_english_number.webp' type='image/webp'>
-<source srcset='https://www.un-web.com/tools/theme/appImage/arabic_to_english_number.jpg' type='image/jpeg'>
-<img src='../theme/appImage/arabic_to_english_number.jpg' alt='تحويل الأرقام العربية إلى أرقام انجليزية'>
-</picture>
+</main><aside style="margin:20px auto;"><div id='pcAppImage' class='box box-app-image text-center sc-hide mc-show lc-show'>
+
 <p>يمكنك تحويل الأرقام العربية مثل ٧٨ الى ارقام انجليزية مثل 78 بسهولة وسرعة</p></div>
 <script data-cfasync='false'>document.querySelector('#pcAppImage img').style.height= (parseInt(parseInt(document.querySelector('#pcAppImage').offsetWidth) * 0.5625)) + 'px'; document.querySelector('#pcAppImage img').style.width='100%';</script> <div class='box web-search-box'>
 <p><label for='pageSearchBox'>محرك البحث</label></p>
@@ -332,7 +332,6 @@ the opposite:
 </div>
 <div class='box box-ad'>
 
-<ins class="adsbygoogle" style="display:block; height:250px" data-ad-client="ca-pub-6172118651852938" data-ad-slot="6775052951" data-ad-format="auto" data-full-width-responsive="true"></ins>
 <script data-cfasync="false">
      (adsbygoogle = window.adsbygoogle || []).push({});
 </script>

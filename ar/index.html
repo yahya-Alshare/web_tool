@@ -44,38 +44,16 @@
 
 </head>
 <body>
-            
-
+  <span class="loader"></span>
+  <div class="overlay"></div>
+ 
                             <!--Wrapper-->
                     <div class="off-menu-wrapper">
                         <div class="inner-wrapper">
                             <a id="close-off-menu" class="close-off-menu" name="startFromTop">
                             </a>
                           
-                            <div onclick="mwToggleMenuOverlay(event)" class="mw-side-menu-overlay closed">
-                                <div class="mw-side-menu">
-                                    <ul>
-                                        <li>
-                                            <a id="go-to-categories-side" href="index.html#categories">خدماتنا</a>
-                                            </li>
-                                        <li>
-                                            <a href="">أجدد الأدوات</a>
-                                            </li>
-                                        <li>
-                                            <a href="">الأكثر استخداما</a>
-                                            </li>
-                                        <li>
-                                            <a href="">معايير التدقيق</a>
-                                            </li>
-                                       
-                                        <li>
-                                            <a href="">اتصل بنا</a>
-                                            </li>
-                                    </ul>
-                                    
-                                </div>
-                                
-                            </div>
+                          
                             
                             <!--Header-->
                             <header class="header" id="header">
@@ -114,7 +92,7 @@
    
       </nav>
       <div class="language-switch">
-        <a href="../en/en/index.html" style="color: #FFF !important;">EN</a>
+        <a href="../en/en/index.html">EN</a>
       </div>
     </header>
 
@@ -140,7 +118,7 @@
     </div>
    
     </div>
-    ...
+
   </div>
   <!-- If we need pagination -->
   <div class="swiper-pagination swiper-pagination-bullets swiper-pagination-horizontal"><span class="swiper-pagination-bullet swiper-pagination-bullet-active" aria-current="true"></span><span class="swiper-pagination-bullet"></span><span class="swiper-pagination-bullet"></span></div>
@@ -372,8 +350,8 @@
                     </h2>
                     <ul class="category-items" itemprop="categoryItems">
                         
-                        <li><a href="#">	سعر الذهب اليوم </a></li>
-                        <li><a href="#"> 	سعر الذهب اليوم عيار 21 الآن </a></li>
+                        <li><a href="gold_price/index.html">	سعر الذهب اليوم </a></li>
+                        <li><a href="gold_price_21k/index.html"> 	سعر الذهب اليوم عيار 21 الآن </a></li>
                        
                         
                         
@@ -501,7 +479,22 @@
     </footer>
                              
                             
-                
+               <script>
+                 document.addEventListener('DOMContentLoaded', function() {
+                  var content = document.querySelector('.overlay');
+      var loader = document.querySelector('.loader');
+
+      // عرض رمز التحميل
+    
+      loader.style.display = 'block';
+      content.style.display = 'block';
+      // إخفاء رمز التحميل بعد زمن محدد (بالمثال: 2 ثانية)
+      setTimeout(function() {
+        loader.style.display = 'none';
+        content.style.display = 'none';
+      }, 3000);
+    });
+               </script>  
           
  
 </html>

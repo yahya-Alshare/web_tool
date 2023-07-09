@@ -53,7 +53,7 @@ function MeasureConnectionSpeed() {
     var speedKbps = (speedBps / 1024).toFixed(2);
     var speedMbps = (speedKbps / 1024).toFixed(2);
     ShowProgressMessage([
-      "سرعة اتصال الإنترنت الخاص بك:",
+      "Your internet connection speed:",
      
       speedMbps + "  MG ",
     ]);

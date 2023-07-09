@@ -19,15 +19,8 @@
 .wrapper.active{
   height: 530px;
 }
-header h1{
-  font-size: 21px;
-  font-weight: 500;
-}
-header p{
-  margin-top: 5px;
-  color: #575757;
-  font-size: 16px;
-}
+
+
 .wrapper .form{
   margin: 20px 0 25px;
 }
@@ -84,9 +77,7 @@ header p{
   .wrapper.active{
     height: 510px;
   }
-  header p{
-    color: #696969;
-  }
+
   .form :where(input, button){
     height: 52px;
   }
